@@ -80,7 +80,7 @@ deps:MvnId
 
 # Properties for associating a doap:Project with a Dependency
 
-deps:configure_requirement
+deps:configure-requirement
 	a owl:ObjectProperty;
 	rdfs:domain doap:Project;
 	rdfs:range deps:Dependency;
@@ -88,7 +88,7 @@ deps:configure_requirement
 	deps:phase deps:ConfigurePhase;
 	deps:level deps:Required.
 
-deps:configure_recommendation
+deps:configure-recommendation
 	a owl:ObjectProperty;
 	rdfs:domain doap:Project;
 	rdfs:range deps:Dependency;
@@ -96,7 +96,7 @@ deps:configure_recommendation
 	deps:phase deps:ConfigurePhase;
 	deps:level deps:Recommended.
 
-deps:configure_suggestion
+deps:configure-suggestion
 	a owl:ObjectProperty;
 	rdfs:domain doap:Project;
 	rdfs:range deps:Dependency;
@@ -104,7 +104,7 @@ deps:configure_suggestion
 	deps:phase deps:ConfigurePhase;
 	deps:level deps:Suggested.
 
-deps:build_requirement
+deps:build-requirement
 	a owl:ObjectProperty;
 	rdfs:domain doap:Project;
 	rdfs:range deps:Dependency;
@@ -112,7 +112,7 @@ deps:build_requirement
 	deps:phase deps:BuildPhase;
 	deps:level deps:Required.
 
-deps:build_recommendation
+deps:build-recommendation
 	a owl:ObjectProperty;
 	rdfs:domain doap:Project;
 	rdfs:range deps:Dependency;
@@ -120,7 +120,7 @@ deps:build_recommendation
 	deps:phase deps:BuildPhase;
 	deps:level deps:Recommended.
 
-deps:build_suggestion
+deps:build-suggestion
 	a owl:ObjectProperty;
 	rdfs:domain doap:Project;
 	rdfs:range deps:Dependency;
@@ -128,7 +128,7 @@ deps:build_suggestion
 	deps:phase deps:BuildPhase;
 	deps:level deps:Suggested.
 
-deps:test_requirement
+deps:test-requirement
 	a owl:ObjectProperty;
 	rdfs:domain doap:Project;
 	rdfs:range deps:Dependency;
@@ -136,7 +136,7 @@ deps:test_requirement
 	deps:phase deps:TestPhase;
 	deps:level deps:Required.
 
-deps:test_recommendation
+deps:test-recommendation
 	a owl:ObjectProperty;
 	rdfs:domain doap:Project;
 	rdfs:range deps:Dependency;
@@ -144,7 +144,7 @@ deps:test_recommendation
 	deps:phase deps:TestPhase;
 	deps:level deps:Recommended.
 
-deps:test_suggestion
+deps:test-suggestion
 	a owl:ObjectProperty;
 	rdfs:domain doap:Project;
 	rdfs:range deps:Dependency;
@@ -152,7 +152,7 @@ deps:test_suggestion
 	deps:phase deps:TestPhase;
 	deps:level deps:Suggested.
 
-deps:runtime_requirement
+deps:runtime-requirement
 	a owl:ObjectProperty;
 	rdfs:domain doap:Project;
 	rdfs:range deps:Dependency;
@@ -160,7 +160,7 @@ deps:runtime_requirement
 	deps:phase deps:RuntimePhase;
 	deps:level deps:Required.
 
-deps:runtime_recommendation
+deps:runtime-recommendation
 	a owl:ObjectProperty;
 	rdfs:domain doap:Project;
 	rdfs:range deps:Dependency;
@@ -168,7 +168,7 @@ deps:runtime_recommendation
 	deps:phase deps:RuntimePhase;
 	deps:level deps:Recommended.
 
-deps:runtime_suggestion
+deps:runtime-suggestion
 	a owl:ObjectProperty;
 	rdfs:domain doap:Project;
 	rdfs:range deps:Dependency;
@@ -176,7 +176,7 @@ deps:runtime_suggestion
 	deps:phase deps:RuntimePhase;
 	deps:level deps:Suggested.
 
-deps:develop_requirement
+deps:develop-requirement
 	a owl:ObjectProperty;
 	rdfs:domain doap:Project;
 	rdfs:range deps:Dependency;
@@ -184,7 +184,7 @@ deps:develop_requirement
 	deps:phase deps:DevelopmentPhase;
 	deps:level deps:Required.
 
-deps:develop_recommendation
+deps:develop-recommendation
 	a owl:ObjectProperty;
 	rdfs:domain doap:Project;
 	rdfs:range deps:Dependency;
@@ -192,7 +192,7 @@ deps:develop_recommendation
 	deps:phase deps:DevelopmentPhase;
 	deps:level deps:Recommended.
 
-deps:develop_suggestion
+deps:develop-suggestion
 	a owl:ObjectProperty;
 	rdfs:domain doap:Project;
 	rdfs:range deps:Dependency;

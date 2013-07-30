@@ -14,18 +14,18 @@ ex:DebianPackage
 	a doap:Project;
 	doap:name "My App";
 	doap:release <#App_1.0>, <#App_1.1>, <#App_1.2>, <#App_1.3>;
-	deps:runtime_requirement [
+	deps:runtime-requirement [
 		deps:on "openjdk-6-jre"^^ex:DebianPackage;
 		deps:since <#App_1.0>;
 		deps:until <#App_1.2>;
 		rdfs:comment "In version 1.0, we switched to Java, so we need OpenJDK now.";
 	];
-	deps:runtime_requirement [
+	deps:runtime-requirement [
 		deps:on "openjdk-7-jre"^^ex:DebianPackage;
 		deps:since <#App_1.2>;
 		rdfs:comment "In version 1.2, we bumped minimum OpenJDK.";
 	];
-	deps:test_requirement [
+	deps:test-requirement [
 		deps:on <#Harness>;
 	].
 
