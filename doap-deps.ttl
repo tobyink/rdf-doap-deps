@@ -72,6 +72,12 @@ deps:GemId
 	rdfs:comment "A module name, optionally followed by one or more operator, version number pairs.";
 	rdfs:comment "Examples: `log4r` or `log4r >= 1.0.5` or `log4r >= 1.0.5, < 2.0.0`".
 
+deps:MvnId
+	a deps:IdentifierScheme;
+	rdfs:label "Maven Identifier";
+	rdfs:comment "A fully qualified Maven artefact name: 'groupID/artefactID version[-classifier]'";
+	rdfs:comment "Example 'org.clojure/clojure 1.5.1-SNAPSHOT'".
+
 # Properties for associating a doap:Project with a Dependency
 
 deps:configure_requirement
