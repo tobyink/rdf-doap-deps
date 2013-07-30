@@ -1,0 +1,32 @@
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix deps: <http://ontologi.es/doap-deps#> .
+@prefix ex:   <http://example.org/> .
+
+ex:DebianPackage
+	a deps:IdentifierScheme;
+	rdfs:label "Debian Package".
+
+<#App>
+	a doap:Project;
+	doap:name "My App";
+	doap:release <#App_1.0>, <#App_1.1>, <#App_1.2>, <#App_1.3>;
+	deps:runtime_requirement [
+		deps:on "openjdk-6-jre"^^ex:DebianPackage;
+		deps:since <#App_1.0>;
+		deps:until <#App_1.2>;
+		rdfs:comment "In version 1.0, we switched to Java, so we need OpenJDK now.";
+	];
+	deps:runtime_requirement [
+		deps:on "openjdk-7-jre"^^ex:DebianPackage;
+		deps:since <#App_1.2>;
+		rdfs:comment "In version 1.2, we bumped minimum OpenJDK.";
+	];
+	deps:test_requirement [
+		deps:on <#Harness>;
+	].
+
+<#Harness> a doap:Project .
