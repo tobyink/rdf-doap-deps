@@ -2,8 +2,34 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl:  <http://www.w3.org/2002/07/owl#> .
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc:   <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix doap: <http://usefulinc.com/ns/doap#> .
 @prefix deps: <http://ontologi.es/doap-deps#> .
+
+deps:
+	a owl:Ontology;
+	rdfs:label "DOAP Dependencies";
+	rdfs:comment "an extension to DOAP for describing a project's requirements";
+	dc:creator <http://tobyinkster.co.uk/#i>;
+	dc:creator _:toxi;
+	dc:created "2013-07-30"^^xsd:date;
+	dc:modified "2013-07-30"^^xsd:date;
+	dc:modified "2013-07-31"^^xsd:date;
+	dc:issued "2013-07-31"^^xsd:date;
+	.
+
+<http://tobyinkster.co.uk/#i>
+	a foaf:Person;
+	foaf:name "Toby Inkster";
+	foaf:isPrimaryTopicOf <http://tobyinkster.co.uk/>.
+
+_:toxi
+	a foaf:Person;
+	foaf:name "Karsten Schmidt";
+	foaf:mbox_sha1sum "e66da09c6f6f75f0d512266706ece1647279a52e";
+	foaf:isPrimaryTopicOf <http://toxi.co.uk/foaf.rdf>;
+	foaf:page <https://twitter.com/toxi>.
 
 # Dependency class
 
